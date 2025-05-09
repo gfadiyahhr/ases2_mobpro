@@ -1,6 +1,5 @@
 package com.ghinafadiyahhr.packagecomghinafadiyahhr6070623000001assessment2.ui.theme
 
-import android.app.Activity
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
@@ -9,28 +8,37 @@ import androidx.compose.material3.dynamicDarkColorScheme
 import androidx.compose.material3.dynamicLightColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 
-private val DarkColorScheme = darkColorScheme(
-    primary = Purple80,
-    secondary = PurpleGrey80,
-    tertiary = Pink80
+private val LightColorScheme = lightColorScheme(
+    primary = Color(0xFF9575CD),
+    onPrimary = Color.White,
+    primaryContainer = Color(0xFFF3E5F5),
+    onPrimaryContainer = Color(0xFF4A148C),
+
+    secondary = Color(0xFFD1C4E9),
+    onSecondary = Color.Black,
+    background = Color(0xFFFFFFFF),
+    onBackground = Color.Black,
+    surface = Color(0xFFFFFFFF),
+    onSurface = Color.Black,
+    outline = Color(0xFFB39DDB)
 )
 
-private val LightColorScheme = lightColorScheme(
-    primary = Purple40,
-    secondary = PurpleGrey40,
-    tertiary = Pink40
+private val DarkColorScheme = darkColorScheme(
+    primary = Color(0xFFD1C4E9),
+    onPrimary = Color.Black,
+    primaryContainer = Color(0xFF9575CD),
+    onPrimaryContainer = Color.White,
 
-    /* Other default colors to override
-    background = Color(0xFFFFFBFE),
-    surface = Color(0xFFFFFBFE),
-    onPrimary = Color.White,
-    onSecondary = Color.White,
-    onTertiary = Color.White,
-    onBackground = Color(0xFF1C1B1F),
-    onSurface = Color(0xFF1C1B1F),
-    */
+    secondary = Color(0xFFB39DDB),
+    onSecondary = Color.Black,
+    background = Color(0xFF121212),
+    onBackground = Color.White,
+    surface = Color(0xFF1E1E1E),
+    onSurface = Color.White,
+    outline = Color(0xFFCE93D8)
 )
 
 @Composable

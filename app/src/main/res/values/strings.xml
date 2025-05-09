@@ -1,4 +1,24 @@
 <resources>
     <string name="app_name">Daftar Belanja</string>
-    <string name="lanjut">Lanjut</string>
+    <string name="judul">Daftar Belanja</string>
+    <string name="x_diklik">%1$s diklik!</string>
+    <string name="ubah_barang">Ubah Barang</string>
+    <string name="tambah_barang">Tambah Barang</string>
+    <string name="pesan_hapus">Apa benar ingin dihapus?</string> <!-- Added "ingin" for clarity -->
+    <string name="tombol_simpan">Simpan</string>
+    <string name="tombol_batal">Batal</string>
+    <string name="tombol_hapus">Hapus</string>
+    <string name="nama_barang">Nama Barang</string>
+    <string name="jumlah">Jumlah</string>
+    <string name="keterangan">Keterangan (opsional)</string>
+    <string name="hapus_pesan">Hapus barang ini dari daftar belanja?</string>
+    <string name="hapus_konfirmasi">Hapus</string>
+    <string name="batal">Batal</string>
+    <string name="grid">Ubah ke tampilan grid</string>
+    <string name="list">Ubah ke tampilan list</string>
+    <string name="recycle_bin">Recycle Bin</string> <!-- Fixed capitalization -->
+    <string name="pulihkan">Pulihkan</string>
+    <string name="hapus_permanen">Hapus Permanen</string>
+    <string name="disimpan">Barang berhasil disimpan</string>
+    <string name="berhasil_dihapus">Barang berhasil dihapus</string>
 </resources>
