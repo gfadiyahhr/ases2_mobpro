@@ -66,9 +66,9 @@ fun MainScreen(navController: NavHostController) {
             TopAppBar(
                 title = { Text(text = stringResource(id = R.string.app_name)) },
                 colors = TopAppBarDefaults.mediumTopAppBarColors(
-                    containerColor = Color(0xFFE8F5E9),
-                    titleContentColor = Color(0xFF388E3C)
-                ),
+                    containerColor = Color(0xFFFCE4EC),
+                    titleContentColor = Color(0xFFD81B60)
+            ),
                 actions = {
                     IconButton(onClick = {
                         CoroutineScope(Dispatchers.IO).launch {
@@ -184,6 +184,7 @@ fun ListItemBelanja(belanja: Belanja, onClick: () -> Unit) {
 
 @Composable
 fun GridItemBelanja(belanja: Belanja, onClick: () -> Unit) {
+
     Card(
         modifier = Modifier
             .fillMaxWidth()
