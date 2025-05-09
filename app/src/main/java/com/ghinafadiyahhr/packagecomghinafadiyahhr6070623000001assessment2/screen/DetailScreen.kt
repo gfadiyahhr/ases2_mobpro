@@ -64,7 +64,7 @@ fun DetailScreen(navController: NavHostController, id: Long? = null) {
         if (id == null) return@LaunchedEffect
         val data = viewModel.getBelanja(id) ?: return@LaunchedEffect
         namaBarang = data.namaBarang
-        jumlah = data.jumlah.toString()
+        jumlah = data.jumlah
         keterangan = data.keterangan
     }
 

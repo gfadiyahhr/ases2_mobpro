@@ -13,23 +13,22 @@ import kotlinx.coroutines.flow.Flow
 interface BelanjaDao {
 
     @Query("SELECT * FROM Belanja WHERE isDeleted = 0 ORDER BY id DESC")
-    fun getAllActive(): Flow<List<Belanja>>  // Observe active Belanja items
+    fun getAllActive(): Flow<List<Belanja>>
 
     @Query("SELECT * FROM Belanja WHERE isDeleted = 1 ORDER BY id DESC")
-    fun getDeleted(): Flow<List<Belanja>>  // Observe deleted Belanja items
+    fun getDeleted(): Flow<List<Belanja>>
 
     @Query("SELECT * FROM Belanja WHERE id = :id LIMIT 1")
-    suspend fun getBelanjaById(id: Long): Belanja?  // Get a specific Belanja item by ID
+    suspend fun getBelanjaById(id: Long): Belanja?
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insert(belanja: Belanja)  // Insert new or update an existing Belanja
+    suspend fun insert(belanja: Belanja)
 
     @Update
-    suspend fun update(belanja: Belanja)  // Update an existing Belanja
-
+    suspend fun update(belanja: Belanja)
     @Delete
-    suspend fun delete(belanja: Belanja)  // Delete a Belanja item
+    suspend fun delete(belanja: Belanja)
 
     @Query("DELETE FROM Belanja WHERE id = :id")
-    suspend fun deleteById(id: Long)  // Delete Belanja by ID
+    suspend fun deleteById(id: Long)
 }

@@ -3,7 +3,7 @@ package com.ghinafadiyahhr.packagecomghinafadiyahhr6070623000001assessment2.scre
 import android.content.res.Configuration
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.staggeredgrid.LazyVerticalStaggeredGrid
-import androidx.compose.foundation.lazy.items //
+import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.lazy.staggeredgrid.items
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.clickable
