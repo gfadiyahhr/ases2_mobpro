@@ -61,4 +61,17 @@ data class MainViewModel(private val dao: BelanjaDao) : ViewModel() {
             dao.deleteById(id)
         }
     }
+
+    fun restore(belanja: Belanja) {
+        viewModelScope.launch {
+            dao.update(belanja.copy(isDeleted = false))
+        }
+    }
+
+    fun deletePermanently(belanja: Belanja) {
+        viewModelScope.launch {
+            dao.delete(belanja)
+        }
+    }
+
 }

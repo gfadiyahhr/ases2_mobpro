@@ -26,9 +26,19 @@ interface BelanjaDao {
 
     @Update
     suspend fun update(belanja: Belanja)
+
     @Delete
     suspend fun delete(belanja: Belanja)
 
     @Query("DELETE FROM Belanja WHERE id = :id")
     suspend fun deleteById(id: Long)
+
+    @Query("UPDATE Belanja SET isDeleted = 1 WHERE id = :id")
+    suspend fun softDeleteById(id: Long)
+
+    @Query("UPDATE Belanja SET isDeleted = 0 WHERE id = :id")
+    suspend fun restoreById(id: Long)
+
+    @Query("DELETE FROM Belanja WHERE isDeleted = 1")
+    suspend fun deleteAllFromRecycleBin()
 }
